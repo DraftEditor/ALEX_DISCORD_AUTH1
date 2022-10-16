@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sweet
+Version: 0.1.12
+Summary: Sweet is an autotest framework
+Home-page: https://github.com/Sweeterio/sweet
+Author: tonglei
+Author-email: tonglei@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
