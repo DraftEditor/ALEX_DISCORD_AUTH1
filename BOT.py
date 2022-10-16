@@ -4,10 +4,11 @@ from interactions.ext.persistence import *
 from flask import Flask, jsonify, request, render_template
 import requests, sqlite3, traceback, configparser
 import socket
+import os
 
 config_ini = configparser.ConfigParser(interpolation=None)
 config_ini.read('config.ini', encoding='utf-8')
-Token = config_ini['setting']['Token']
+Token = os.environ['DISCORD_BOT_TOKEN']
 dbname = config_ini['setting']['dbname']
 client_id = config_ini['setting']['client_id']
 client_secret = config_ini['setting']['client_secret']
