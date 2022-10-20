@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify, request, render_template
 import requests, sqlite3, traceback, configparser
+import os
 
 app = Flask(__name__)
 port = 5000
@@ -12,7 +13,7 @@ dbname = config_ini['setting']['dbname']
 client_id = config_ini['setting']['client_id']
 client_secret = config_ini['setting']['client_secret']
 callback_url = "https://discordauthbot1.okokoziro.repl.co/auth?code=wCiIdKR3Pn4ew5UCosuGU7UxPgV5eI&state=1030869207010783232"
-botToken = config_ini['setting']['Token']
+botToken = config_ini['setting']['DISCORD_BOT_TOKEN']
 APIKEY = config_ini['setting']['APIKEY']
 
 

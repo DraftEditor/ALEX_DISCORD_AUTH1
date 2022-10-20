@@ -8,7 +8,7 @@ import os
 
 config_ini = configparser.ConfigParser(interpolation=None)
 config_ini.read('config.ini', encoding='utf-8')
-Token = os.environ['DISCORD_BOT_TOKEN']
+Token = config_ini['setting']['DISCORD_BOT_TOKEN']
 dbname = config_ini['setting']['dbname']
 client_id = config_ini['setting']['client_id']
 client_secret = config_ini['setting']['client_secret']
